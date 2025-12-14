@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+}
+
+/* ---------- Custom styles ---------- */
+
+.btn-primary {
+  @apply bg-gradient-to-r from-emerald-600 to-green-500 border-none text-white;
+}
+
+.btn-primary:hover {
+  @apply opacity-90;
+}
+
+.text-primary {
+  @apply bg-gradient-to-r from-emerald-600 to-green-500 bg-clip-text text-transparent;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
