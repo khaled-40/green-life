@@ -1,0 +1,12 @@
+ul a.active {
+  background: linear-gradient(to right, #059669, #22c55e);
+  /* emerald-600 → green-500 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.menu-horizontal li a{
+  margin-right: 16px;
+}
