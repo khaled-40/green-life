@@ -32,7 +32,7 @@ const Register = () => {
             .then(result => {
                 console.log(result);
                 const user = result.user;
-                updateProfile(user, {
+               return updateProfile(user, {
                     displayName: name,
                     photoURL: photoURL
                 })
