@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const PlantCard = ({plant}) => {
+const PlantCard = ({ plant }) => {
     return (
         <div
             className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group"
@@ -39,9 +39,8 @@ const PlantCard = ({plant}) => {
                 <Link
                     to={`/plants/${plant.plantId}`}
                     className="mt-4 inline-block text-center 
-                             bg-green-600 text-white 
+                    btn-primary text-white 
                              py-2 rounded-lg 
-                             hover:bg-green-700 
                              transition duration-300"
                 >
                     View Details
