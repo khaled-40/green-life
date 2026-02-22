@@ -6,28 +6,28 @@ const experts = [
         name: "Daniel Carter",
         specialization: "Indoor Air Purification Specialist",
         image:
-            "https://i.ibb.co.com/7tDZJ0RS/microsoft-edge-1-N49-Cn7-P0-Fg-unsplash.jpg"
+            "https://res.cloudinary.com/dfji3qdsk/image/upload/w_1200,c_scale,q_auto,f_auto/v1771751318/microsoft-edge-1N49Cn7P0Fg-unsplash_rr9mue.jpg"
     },
     {
         id: 2,
         name: "Sophia Mitchell",
         specialization: "Plant Nutrition & Soil Expert",
         image:
-            "https://i.ibb.co.com/fd5cCchK/christina-wocintechchat-com-m-LQ1t-8-Ms5-PY-unsplash.jpg"
+            "https://res.cloudinary.com/dfji3qdsk/image/upload/w_1200,c_scale,q_auto,f_auto/v1771751310/christina-wocintechchat-com-m-LQ1t-8Ms5PY-unsplash_xquxkg.jpg"
     },
     {
         id: 3,
         name: "Liam Anderson",
         specialization: "Low-Light Plant Consultant",
         image:
-            "https://i.ibb.co.com/zVzrXZGZ/microsoft-365-b-WL-c09-Ys80-unsplash.jpg"
+            "https://res.cloudinary.com/dfji3qdsk/image/upload/w_1200,c_scale,q_auto,f_auto/v1771751308/microsoft-365-bWL-c09Ys80-unsplash_txmus5.jpg"
     },
     {
         id: 4,
         name: "Emma Rodriguez",
         specialization: "Urban Indoor Garden Designer",
         image:
-            "https://i.ibb.co.com/LhZvSrrN/bruce-mars-8-YG31-Xn4d-Sw-unsplash.jpg"
+            "https://res.cloudinary.com/dfji3qdsk/image/upload/w_1200,c_scale,q_auto,f_auto/v1771751312/bruce-mars-8YG31Xn4dSw-unsplash_wrgv39.jpg"
     }
 ];
 
@@ -47,7 +47,7 @@ const GreenExperts = () => {
                     </p>
                 </div>
 
-                {/* Experts Grid */}
+                {/* Experts */}
                 <div className="grid gap-10 
                         grid-cols-1 
                         sm:grid-cols-2 
@@ -60,7 +60,7 @@ const GreenExperts = () => {
                          hover:shadow-xl transition duration-300 p-6"
                         >
 
-                            {/* Image Wrapper (Controlled Size) */}
+                            {/* Image */}
                             <div className="w-40 h-40 mx-auto rounded-full overflow-hidden mb-6">
                                 <img
                                     src={expert.image}

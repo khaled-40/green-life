@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const PlantCard = ({ plant }) => {
+    const cloudName = "dfji3qdsk";
     return (
         <div
             className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group"
@@ -9,12 +10,20 @@ const PlantCard = ({ plant }) => {
             {/* Image Wrapper */}
             <div className="relative w-full h-64 overflow-hidden">
                 <img
-                    src={plant.image}
+                    src={`https://res.cloudinary.com/${cloudName}/image/upload/w_600,c_fill,q_auto,f_auto/${plant.image}`}
+                    srcSet={`
+    https://res.cloudinary.com/${cloudName}/image/upload/w_300,c_fill,q_auto,f_auto/${plant.image} 300w,
+    https://res.cloudinary.com/${cloudName}/image/upload/w_600,c_fill,q_auto,f_auto/${plant.image} 600w,
+    https://res.cloudinary.com/${cloudName}/image/upload/w_900,c_fill,q_auto,f_auto/${plant.image} 900w
+  `}
+                    sizes="(max-width: 640px) 300px,
+         (max-width: 1024px) 600px,
+         900px"
                     alt={plant.plantName}
                     loading="lazy"
                     className="w-full h-full object-cover 
-                             group-hover:scale-105 
-                             transition duration-500"
+             group-hover:scale-105 
+             transition duration-500"
                 />
             </div>
 
